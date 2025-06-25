@@ -1,0 +1,67 @@
+plugins {
+    alias(libs.plugins.android.application)
+    id 'com.google.gms.google-services'
+
+}
+
+android {
+    namespace 'com.example.vt6002cem'
+    compileSdk 35
+
+    defaultConfig {
+        applicationId "com.example.vt6002cem"
+        minSdk 31
+        targetSdk 35
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    signingConfigs {
+        release {
+            storeFile file("C:\\Users\\user\\Desktop\\Android assignment\\keystore.jks")
+            // Replace with the actual path to your keystore file
+            storePassword "123456" // Replace with your keystore password
+            keyAlias "key0" // Replace with your key alias
+            keyPassword "123456" // Replace with your key password
+        }
+    }
+
+        buildTypes {
+
+            debug {
+                signingConfig signingConfigs.release // Use the same keystore for the debug version
+            }
+            release {
+                minifyEnabled false
+                proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+                signingConfig signingConfigs.release // Use the same keystore for the release version
+            }
+
+        }
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+}
+dependencies {
+
+    implementation libs.appcompat
+    implementation libs.material
+    implementation libs.activity
+    implementation libs.constraintlayout
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.google.firebase:firebase-auth:23.2.0'
+    implementation 'com.google.android.gms:play-services-auth:20.2.0'
+    implementation 'com.google.firebase:firebase-database:21.0.0'
+    implementation libs.firebase.database
+    implementation libs.play.services.location
+    testImplementation libs.junit
+    androidTestImplementation libs.ext.junit
+    androidTestImplementation libs.espresso.core
+
+
+}

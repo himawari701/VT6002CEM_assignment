@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/paleBlue">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome to Event Management App"
+        android:textSize="24sp"
+        android:layout_marginBottom="40dp"
+        android:textColor="#FF0000" />
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Google Map"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:background="#DB4437"/>
+    <Button
+        android:id="@+id/btnGoToCamera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Camera"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:background="#DB4437"/>
+    <Button
+        android:id="@+id/btnRead"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Event List"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:background="#2196F3"/>
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Add event"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:background="#2196F3"/>
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Delete event"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:background="#DB4437"/>
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Logout"
+        android:padding="10dp"
+        android:textColor="#FFFFFF"
+        android:background="#B0BEC5"/>
+</LinearLayout>

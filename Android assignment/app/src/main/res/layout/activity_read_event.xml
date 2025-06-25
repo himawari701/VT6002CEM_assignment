@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/skyBlue">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvEventList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="8dp" />
+
+    <Button
+        android:id="@+id/btnDeleteEvents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Delete Events"
+        android:layout_marginTop="16dp"
+        android:padding="12dp"
+        android:textColor="#FFFFFF"
+        android:background="#D32F2F" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:text="Back to Home Page"
+        android:textColor="#FFFFFF"
+        android:background="#B0BEC5" />
+
+</LinearLayout>
